@@ -26,6 +26,16 @@ a:link {
   text-decoration: none;
 }
 
+img {
+  -webkit-box-shadow: 0 10px #f56737;
+          box-shadow: 0 10px #f56737;
+}
+
+hr {
+  border: 0;
+  border-top: 5px solid #efefef;
+}
+
 figure { margin: 0; }
 
 /* ==========================================================================
@@ -89,6 +99,24 @@ header h2 {
   padding-right: 0;
 }
 
+/* Intro
+   ========================================================================== */
+
+.intro {
+  padding-top: 23px;
+}
+.intro .caption {
+  margin-bottom: 28px;
+}
+
+
+/* Footer
+   ========================================================================== */
+
+footer {
+  border-top: 1px solid #e5e5e5;
+}
+
 /* ==========================================================================
    Modules
    ========================================================================== */
@@ -109,6 +137,22 @@ header h2 {
   background-position: 0 0;
 }
 
+.icon {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  background-image: url(../images/sprites.png);
+  background-repeat: no-repeat;
+
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.icon-facebook { background-position: 0 -64px; }
+.icon-vimeo { background-position: -64px -64px; }
+.icon-lastfm { background-position: -128px -64px; }
+.icon-linkedin { background-position: -192px -64px; }
+.icon-dribbble { background-position: -256px -64px; }
 
 /* ==========================================================================
    Utilities
@@ -131,6 +175,7 @@ header h2 {
 .list-inline {
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
   /*margin-left: -5px;*/
   list-style: none;
 }
@@ -139,5 +184,13 @@ header h2 {
   /*margin-left: 5px;*/
 }
 
-.pull-left { float: left; }
-.pull-right { float: right; }
+.push-left { float: left; }
+.push-right { float: right; }
+
+.caption {
+  margin: 0;
+  font-size: 30px;
+  line-height: 42px;
+  font-style: italic;
+  font-weight: 500;
+}
